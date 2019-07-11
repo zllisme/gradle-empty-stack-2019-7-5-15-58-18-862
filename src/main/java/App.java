@@ -7,6 +7,13 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        Mobile iphone = new Iphone("iphone x7", "white", "brand");
+        Person person = new Person("zhulii", iphone);
+        person.makeCall("hello world!");
+        Mobile andoird = new Andriod("andriod x7", "white", "brand");
+
+        person.setMobile(andoird);
+        person.makeCall("hello!");
     }
 }
